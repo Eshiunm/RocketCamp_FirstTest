@@ -75,6 +75,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.hover_opacity_08:hover {
+  opacity: 0.8;
+}
+
 .container {
   /*桌機*/
   /*1296px + 12px*2 (container 左右兩邊往內推 gutter的一半) =1320px*/
