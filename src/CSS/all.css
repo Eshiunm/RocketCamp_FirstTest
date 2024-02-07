@@ -1,0 +1,464 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*去除 a 標籤預設的底線樣式*/
+a {
+  text-decoration: none;
+}
+
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%; /*max-width：可自適應顯示圖片*/
+  height: auto;
+  vertical-align: middle;
+}
+
+/* 全域 border box */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* CSS Reset end */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  /*桌機*/
+  /*1296px + 12px*2 (container 左右兩邊往內推 gutter的一半) =1320px*/
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px; /*gutter的一半= 24/2 =12px*/
+  /*平板*/
+  /*手機*/
+}
+@media (max-width: 768px) {
+  .container {
+    /*696+24*/
+    max-width: 720px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    /*348+24*/
+    max-width: 372px;
+  }
+}
+
+.col-sm-1 {
+  width: calc((100% - 72px) / 4 * 1 + 0px);
+}
+
+.col-sm-2 {
+  width: calc((100% - 72px) / 4 * 2 + 24px);
+}
+
+.col-sm-3 {
+  width: calc((100% - 72px) / 4 * 3 + 48px);
+}
+
+.col-sm-4 {
+  width: calc((100% - 72px) / 4 * 4 + 72px);
+}
+
+@media (min-width: 768px) {
+  .col-lg-1 {
+    width: calc((100% - 264px) / 12 * 1 + 0px);
+  }
+  .col-lg-2 {
+    width: calc((100% - 264px) / 12 * 2 + 24px);
+  }
+  .col-lg-3 {
+    width: calc((100% - 264px) / 12 * 3 + 48px);
+  }
+  .col-lg-4 {
+    width: calc((100% - 264px) / 12 * 4 + 72px);
+  }
+  .col-lg-5 {
+    width: calc((100% - 264px) / 12 * 5 + 96px);
+  }
+  .col-lg-6 {
+    width: calc((100% - 264px) / 12 * 6 + 120px);
+  }
+  .col-lg-7 {
+    width: calc((100% - 264px) / 12 * 7 + 144px);
+  }
+  .col-lg-8 {
+    width: calc((100% - 264px) / 12 * 8 + 168px);
+  }
+  .col-lg-9 {
+    width: calc((100% - 264px) / 12 * 9 + 192px);
+  }
+  .col-lg-10 {
+    width: calc((100% - 264px) / 12 * 10 + 216px);
+  }
+  .col-lg-11 {
+    width: calc((100% - 264px) / 12 * 11 + 240px);
+  }
+  .col-lg-12 {
+    width: calc((100% - 264px) / 12 * 12 + 264px);
+  }
+}
+.bannerSection .wrap {
+  background-color: #707070;
+}
+.bannerSection .bannerImg {
+  height: 958px;
+  background-image: url("../../src/imgs/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 640px) {
+  .bannerSection .bannerImg {
+    height: 700px;
+  }
+}
+.bannerSection .bannerText {
+  width: 304px;
+  margin: 0 auto;
+  padding-top: 308px;
+  margin-bottom: 48px;
+}
+.bannerSection .bannerText .banner_subTitle {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: italic;
+}
+@media (max-width: 640px) {
+  .bannerSection .bannerText .banner_subTitle {
+    display: block;
+    padding-left: 30px;
+  }
+}
+.bannerSection .bannerText h1 {
+  font-size: 80px;
+  color: #ffffff;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.325;
+  margin-bottom: 32px;
+}
+@media (max-width: 640px) {
+  .bannerSection .bannerText h1 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 0;
+  }
+}
+.bannerSection .bannerText .banner_Title {
+  width: 283px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.5;
+  color: white;
+}
+@media (max-width: 640px) {
+  .bannerSection .bannerText .banner_Title {
+    display: none;
+  }
+}
+.bannerSection .bannerIcon {
+  width: 304px;
+  margin: 0 auto;
+}
+.bannerSection .bannerIcon .iconList {
+  display: flex;
+  gap: 16px;
+  justify-content: space-around;
+}
+@media (max-width: 640px) {
+  .bannerSection .bannerIcon .iconList {
+    flex-wrap: wrap;
+  }
+  .bannerSection .bannerIcon .iconList .iconItem {
+    width: 40%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
+
+.AboutSection .wrap {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.AboutSection .sectionTitle {
+  font-size: 64px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.3125;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 640px) {
+  .AboutSection .sectionTitle {
+    font-size: 40px;
+  }
+}
+.AboutSection .photo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.AboutSection .personInfo {
+  max-width: 412px;
+  margin: 0 auto;
+}
+.AboutSection .personInfo h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.325;
+  margin-bottom: 4px;
+}
+.AboutSection .personInfo p {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.5;
+}
+.AboutSection .personInfo .bornTime {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.AboutSection .personInfo .Education {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.AboutSection .divideLine {
+  max-width: 384px;
+  margin-bottom: 28px;
+  border: 1px solid #000000;
+}
+.AboutSection .ExperienceList {
+  max-width: 342px;
+  margin: 0 auto;
+  text-align: center;
+}
+.AboutSection .ExperienceList .ExperienceItem {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.325;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 28px;
+}
+@media (max-width: 640px) {
+  .AboutSection .ExperienceList .ExperienceItem {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+.AboutSection .ExperienceList .ExperienceItem:last-child {
+  margin-bottom: 0;
+}
+.AboutSection .ExperienceList .ExperienceItem::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 5px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: #891818;
+}
+@media (max-width: 640px) {
+  .AboutSection .ExperienceList .ExperienceItem::before {
+    top: 3px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.BrandSection .wrap {
+  background-color: #000000;
+  padding-top: 56px;
+  padding-bottom: 160px;
+}
+.BrandSection .brandTitleHeader {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 68px;
+}
+.BrandSection .brandTitleHeader .brandTitle {
+  font-size: 64px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.3125;
+  margin-bottom: 12px;
+}
+@media (max-width: 640px) {
+  .BrandSection .brandTitleHeader .brandTitle {
+    font-size: 40px;
+  }
+}
+.BrandSection .brandTitleHeader .brandsubTitle {
+  font-size: 24px;
+  line-height: 1.325;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+@media (max-width: 640px) {
+  .BrandSection .brandTitleHeader .brandsubTitle {
+    font-size: 20px;
+  }
+}
+.BrandSection .brandTitleHeader .brandText {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.BrandSection .brandImgList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.BrandSection .brandImgItem {
+  margin-bottom: 40px;
+}
+.BrandSection .brandImgItem:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 640px) {
+  .BrandSection .brandImgItem {
+    margin-bottom: 16px;
+  }
+}
+
+.otherWorkSection .wrap {
+  padding-top: 56px;
+  padding-bottom: 144px;
+}
+@media (max-width: 640px) {
+  .otherWorkSection .wrap {
+    padding-bottom: 80px;
+  }
+}
+.otherWorkSection .otherWorkTitleHeader {
+  text-align: center;
+}
+.otherWorkSection .otherWorkTitleHeader .otherWorkTitle {
+  font-size: 64px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.otherWorkSection .otherWorkTitleHeader .otherWorksubTitle {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 56px;
+}
+.otherWorkSection .workImgList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.otherWorkSection .workImgList .workImgItem {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.otherWorkSection .workImgList .workImgItem .workImgTitle {
+  font-size: 20px;
+  line-height: 2.1;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+}
+footer .wrap {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #000000;
+}
+footer h2 {
+  font-size: 64px;
+  font-style: italic;
+  line-height: 1.3125;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+@media (max-width: 640px) {
+  footer h2 {
+    font-size: 40px;
+  }
+}
+footer p {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.5;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+footer p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 640px) {
+  footer p {
+    font-size: 16px;
+  }
+}

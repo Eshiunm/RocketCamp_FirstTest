@@ -1,0 +1,13 @@
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_base.scss";
+@import "_utilities.scss";
+@import "_grid_MobileFisrt.scss";
+
+// layout 共用部分的 SCSS
+@import "../Layout/header.scss";
+@import "../Layout/footer.scss";
+
+// pages 每個頁面的 SCSS
+@import "../Pages/index.scss";
