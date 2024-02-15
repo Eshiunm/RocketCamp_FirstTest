@@ -173,14 +173,14 @@ body {
   padding-top: 308px;
   margin-bottom: 48px;
 }
-.bannerSection .bannerText .banner_subTitle {
+.bannerSection .bannerText .bannerSubTitle {
   font-size: 24px;
   color: #ffffff;
   font-weight: bold;
   font-style: italic;
 }
 @media (max-width: 640px) {
-  .bannerSection .bannerText .banner_subTitle {
+  .bannerSection .bannerText .bannerSubTitle {
     display: block;
     padding-left: 30px;
   }
@@ -200,7 +200,7 @@ body {
     margin-bottom: 0;
   }
 }
-.bannerSection .bannerText .banner_Title {
+.bannerSection .bannerText .bannerTitle {
   width: 283px;
   margin: 0 auto;
   font-size: 24px;
@@ -210,7 +210,7 @@ body {
   color: white;
 }
 @media (max-width: 640px) {
-  .bannerSection .bannerText .banner_Title {
+  .bannerSection .bannerText .bannerTitle {
     display: none;
   }
 }
@@ -234,11 +234,11 @@ body {
   }
 }
 
-.AboutSection .wrap {
+.aboutSection .wrap {
   padding-top: 56px;
   padding-bottom: 56px;
 }
-.AboutSection .sectionTitle {
+.aboutSection .sectionTitle {
   font-size: 64px;
   font-style: italic;
   font-weight: bold;
@@ -248,20 +248,20 @@ body {
   margin-bottom: 40px;
 }
 @media (max-width: 640px) {
-  .AboutSection .sectionTitle {
+  .aboutSection .sectionTitle {
     font-size: 40px;
   }
 }
-.AboutSection .photo {
+.aboutSection .photo {
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
 }
-.AboutSection .personInfo {
+.aboutSection .personInfo {
   max-width: 412px;
   margin: 0 auto;
 }
-.AboutSection .personInfo h3 {
+.aboutSection .personInfo h3 {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
@@ -269,31 +269,31 @@ body {
   line-height: 1.325;
   margin-bottom: 4px;
 }
-.AboutSection .personInfo p {
+.aboutSection .personInfo p {
   text-align: center;
   font-weight: bold;
   font-style: italic;
   line-height: 1.5;
 }
-.AboutSection .personInfo .bornTime {
+.aboutSection .personInfo .bornTime {
   font-size: 24px;
   margin-bottom: 8px;
 }
-.AboutSection .personInfo .Education {
+.aboutSection .personInfo .Education {
   font-size: 24px;
   margin-bottom: 24px;
 }
-.AboutSection .divideLine {
+.aboutSection .divideLine {
   max-width: 384px;
   margin-bottom: 28px;
   border: 1px solid #000000;
 }
-.AboutSection .ExperienceList {
+.aboutSection .ExperienceList {
   max-width: 342px;
   margin: 0 auto;
   text-align: center;
 }
-.AboutSection .ExperienceList .ExperienceItem {
+.aboutSection .ExperienceList .ExperienceItem {
   position: relative;
   display: inline-block;
   font-size: 24px;
@@ -303,16 +303,16 @@ body {
   margin-bottom: 28px;
 }
 @media (max-width: 640px) {
-  .AboutSection .ExperienceList .ExperienceItem {
+  .aboutSection .ExperienceList .ExperienceItem {
     width: 100%;
     font-size: 16px;
     text-align: center;
   }
 }
-.AboutSection .ExperienceList .ExperienceItem:last-child {
+.aboutSection .ExperienceList .ExperienceItem:last-child {
   margin-bottom: 0;
 }
-.AboutSection .ExperienceList .ExperienceItem::before {
+.aboutSection .ExperienceList .ExperienceItem::before {
   content: "";
   position: absolute;
   left: -38px;
@@ -323,7 +323,7 @@ body {
   background-color: #891818;
 }
 @media (max-width: 640px) {
-  .AboutSection .ExperienceList .ExperienceItem::before {
+  .aboutSection .ExperienceList .ExperienceItem::before {
     top: 3px;
     left: 0;
     height: 16px;
@@ -331,17 +331,17 @@ body {
   }
 }
 
-.BrandSection .wrap {
+.brandSection .wrap {
   background-color: #000000;
   padding-top: 56px;
   padding-bottom: 160px;
 }
-.BrandSection .brandTitleHeader {
+.brandSection .brandTitleHeader {
   color: #ffffff;
   text-align: center;
   margin-bottom: 68px;
 }
-.BrandSection .brandTitleHeader .brandTitle {
+.brandSection .brandTitleHeader .brandTitle {
   font-size: 64px;
   font-weight: 500;
   font-style: italic;
@@ -349,11 +349,11 @@ body {
   margin-bottom: 12px;
 }
 @media (max-width: 640px) {
-  .BrandSection .brandTitleHeader .brandTitle {
+  .brandSection .brandTitleHeader .brandTitle {
     font-size: 40px;
   }
 }
-.BrandSection .brandTitleHeader .brandsubTitle {
+.brandSection .brandTitleHeader .brandsubTitle {
   font-size: 24px;
   line-height: 1.325;
   font-style: italic;
@@ -361,28 +361,28 @@ body {
   margin-bottom: 32px;
 }
 @media (max-width: 640px) {
-  .BrandSection .brandTitleHeader .brandsubTitle {
+  .brandSection .brandTitleHeader .brandsubTitle {
     font-size: 20px;
   }
 }
-.BrandSection .brandTitleHeader .brandText {
+.brandSection .brandTitleHeader .brandText {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
 }
-.BrandSection .brandImgList {
+.brandSection .brandImgList {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.BrandSection .brandImgItem {
+.brandSection .brandImgItem {
   margin-bottom: 40px;
 }
-.BrandSection .brandImgItem:last-child {
+.brandSection .brandImgItem:last-child {
   margin-bottom: 0;
 }
 @media (max-width: 640px) {
-  .BrandSection .brandImgItem {
+  .brandSection .brandImgItem {
     margin-bottom: 16px;
   }
 }
@@ -448,18 +448,19 @@ footer h2 {
     font-size: 40px;
   }
 }
-footer p {
+footer a {
+  display: block;
   color: #ffffff;
   font-size: 24px;
   line-height: 1.5;
   font-style: italic;
   margin-bottom: 16px;
 }
-footer p:last-child {
+footer a:last-child {
   margin-bottom: 0;
 }
 @media (max-width: 640px) {
-  footer p {
+  footer a {
     font-size: 16px;
   }
 }
